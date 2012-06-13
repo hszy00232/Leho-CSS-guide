@@ -1,3 +1,35 @@
 Leho-CSS-guide
 ==============
 <h2 style="border-bottom:1px solid #ccc">1.CSS浏览器支持标准</h2>
+<table>
+  <tr>
+    <th></th>
+    <th>WinXP</th>
+    <th>Win7</th>
+    <th>OS X</th>
+  </tr>
+  <tr>
+    <th>IE9</th>
+    <td>B</td>
+    <td>B</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>IE8</th>
+    <td>A</td>
+    <td>A</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>IE7</th>
+    <td>B</td>
+    <td>B</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>IE6</th>
+    <td>B</td>
+    <td>B</td>
+    <td></td>
+  </tr>
+</table>
