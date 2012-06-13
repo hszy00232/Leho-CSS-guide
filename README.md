@@ -3,67 +3,67 @@ Leho-CSS-guide
 <h2 style="border-bottom:1px solid #ccc">1.CSS浏览器支持标准</h2>
 <table>
   <tr>
-    <th></th>
-    <th>WinXP</th>
-    <th>Win7</th>
-    <th>OS X</th>
+    <td></td>
+    <td>WinXP</td>
+    <td>Win7</td>
+    <td>OS X</td>
   </tr>
   <tr>
-    <th>IE9</th>
+    <td>IE9</td>
     <td>B</td>
     <td>B</td>
     <td></td>
   </tr>
   <tr>
-    <th>IE8</th>
+    <td>IE8</td>
     <td>A</td>
     <td>A</td>
     <td></td>
   </tr>
   <tr>
-    <th>IE7</th>
+    <td>IE7</td>
     <td>B</td>
     <td>B</td>
     <td></td>
   </tr>
   <tr>
-    <th>IE6</th>
+    <td>IE6</td>
     <td>B</td>
     <td>B</td>
     <td></td>
   </tr>
   <tr>
-    <th>Chrom16</th>
+    <td>Chrom16</td>
     <td>A</td>
     <td>A</td>
     <td>A</td>
   </tr>
   <tr>
-    <th>Chrom14</th>
+    <td>Chrom14</td>
     <td>A</td>
     <td>A</td>
     <td>A</td>
   </tr>
   <tr>
-    <th>FireFox10</th>
+    <td>FireFox10</td>
     <td>A</td>
     <td>A</td>
     <td>A</td>
   </tr>
   <tr>
-    <th>FireFox9</th>
+    <td>FireFox9</td>
     <td>A</td>
     <td>A</td>
     <td>A</td>
   </tr>
   <tr>
-    <th>Safari</th>
+    <td>Safari</td>
     <td>B</td>
     <td>B</td>
     <td>B</td>
   </tr>
   <tr>
-    <th>Opera</th>
+    <td>Opera</td>
     <td>C</td>
     <td>C</td>
     <td>C</td>
