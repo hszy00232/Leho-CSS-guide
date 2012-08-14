@@ -1,11 +1,22 @@
-### 跨浏览器剪贴功能
+### CSS-vertical-align
+
+## 定义和用法
+
+vertical-align 属性设置元素的垂直对齐方式。
+
+## 说明
+
+该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。允许指定负长度值和百分比值。这会使元素降低而不是升高。在表单元格中，这个属性会设置单元格框中的单元格内容的对齐方式。
+
+
+
 
 IE本身有提供了原生的支持: `clipboardData` 和 `setData`。Firefox 等都没有，因此利用 flash 来做跨浏览器支持。
 
 使用 ZeroClipboard 是目前最好的解决方式(需要在服务器上运行):  
 
         // 初始化一个复制程序
-    var clip = new ZeroClipboard.Client(),
+     var clip = new ZeroClipboard.Client(),
         doc = document,
         tip = doc.getElementById('tip'),
         text = doc.getElementById('text');
