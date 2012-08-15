@@ -2,9 +2,20 @@
 
 ### CSS3灰度级滤镜
 
-vertical-align 属性设置元素的垂直对齐方式。
+通过CSS3的来减少图片的饱和度很简单，下面我们给需要变黑白的图片添加一个class `.desaturate`，接下来使用CSS3的fiter：
+        img.desaturate{
+                -webkit-filter: grayscale(100%);
+                   -moz-filter: grayscale(100%);
+                    -ms-filter: grayscale(100%);
+                     -o-filter: grayscale(100%);
+                        filter: grayscale(100%);
+        }
+HTML结构：
+        <img src="***.png" class="desaturate"/>
 
-## 说明
+### 添加一个SVG的滤镜效果
+
+
 
 该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。允许指定负长度值和百分比值。这会使元素降低而不是升高。在表单元格中，这个属性会设置单元格框中的单元格内容的对齐方式。
 
