@@ -76,4 +76,24 @@ HTML结构：
                 -webkit-filter: grayscale(1);
         }
         
-更多关于 `ZeroClipboard` 的内容：[http://code.google.com/p/zeroclipboard/]();
+### 扩展应用：实现整个页面变灰效果
+
+        html{
+                -webkit-filter: grayscale(100%);
+                   -moz-filter: grayscale(100%);
+                    -ms-filter: grayscale(100%);
+                     -o-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        filter: url(desaturate.svg#greyscale);
+                        filter: gray;
+                        /* filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 可被filter:gray替换 */
+                -webkit-filter: grayscale(1);
+        }
+        
+        
+### 参考内容：
+
+* [http://demosthenes.info/blog/532/Convert-Images-To-Black-And-White-With-CSS]
+* [http://www.cnblogs.com/rubylouvre/archive/2012/08/13/2636796.html]
+* [http://caniuse.com/#search=filter]
+* [http://www.yesky.com/240/180240_4.shtml]
