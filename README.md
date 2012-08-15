@@ -7,7 +7,8 @@
 ### 目录
 
 1. [约定原则](#general-principles)
-2. [注释](#comments)
+2. [CSS组织](#css-organization)
+3. [注释](#comments)
 
 <a name="general-principles"></a>
 ### 1.约定原则
@@ -19,11 +20,11 @@
 * 严格执行一致认可的风格
 * 如有疑义，则使用现有的约定
 
-<a name="comments"></a>
-### 2.样式文件整理
+<a name="css-organization"></a>
+### 2.CSS组织
 
 * 一个频道中页面往往大于2个，这时我们需要把频道中通用的样式提成 `common.css` 文件，具体页面使用时 `@import common.css`
-* 具体页面的样式，建议按 页面的通用样式->页面模块的样式->重置通用模块样式 这样的顺序来组织页面的样式
+* 具体页面的样式，建议按 ` 页面的通用样式->页面模块的样式->重置全部通用模块样式 ` 这样的顺序来组织页面的样式
 
 
 
