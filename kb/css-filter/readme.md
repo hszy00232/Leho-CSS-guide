@@ -35,9 +35,9 @@ HTML结构：
         
 滤镜使用一个数值矩阵表示如何改变图像的颜色。行数29，30，31，32表明如何改变图像的红、绿、蓝、α(透明度)通道，这4行中的每一行给出了红、绿、蓝、α的比例和一个校正值。
 
-以第29行为例，它表明当前像素点的红色的比例为33.33%，绿色的比例为33.33%，蓝色的比例为33.33%，没有透明度，不使用校正值，把这些因素混合到一起，将成为这个像素点红色部分新的值
+以第29行为例，它表明当前像素点的红色的比例为33.33%，绿色的比例为33.33%，蓝色的比例为33.33%，没有透明度，不使用校正值，把这些因素混合到一起，将成为这个像素点红色部分新的值。第30行代码为绿色部分新的值，第31行代码为蓝色部分新的值，第32行保持原来的透明度不变。这一滤镜的结果将图像由彩色改为黑白色。
         
-扩展之前的CSS filter为:
+扩展之后的CSS filter为:
 
         img.desaturate{
                 -webkit-filter: grayscale(100%);
@@ -47,6 +47,33 @@ HTML结构：
                         filter: grayscale(100%);
                         filter: url(desaturate.svg#greyscale);
         }
-       
-    
+
+### 增加对IE的支持
+
+到目前为止，我们的代码支持了所有的高端浏览器，接下来只需要添加`filter:gray;`就可以兼容IE6-9了。
+
+扩展之后的CSS filter为：
+        img.desaturate{
+                -webkit-filter: grayscale(100%);
+                   -moz-filter: grayscale(100%);
+                    -ms-filter: grayscale(100%);
+                     -o-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        filter: url(desaturate.svg#greyscale);
+                        filter: gray;
+        }
+        
+如果想兼容老版的Webkit，需要在最后添加`-webkit-filter:grayscale(1);`,最终代码为：
+
+        img.desaturate{
+                -webkit-filter: grayscale(100%);
+                   -moz-filter: grayscale(100%);
+                    -ms-filter: grayscale(100%);
+                     -o-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        filter: url(desaturate.svg#greyscale);
+                        filter: gray;
+                -webkit-filter: grayscale(1);
+        }
+        
 更多关于 `ZeroClipboard` 的内容：[http://code.google.com/p/zeroclipboard/]();
