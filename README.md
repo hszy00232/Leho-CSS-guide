@@ -28,6 +28,13 @@
 
 * 一个频道中页面往往大于2个，这时我们需要把频道中通用的CSS提成 `common.css` 文件，具体页面使用时 `@import common.css`
 * 具体页面的CSS，建议按 ` 页面通用->具体业务->重置全站通用 ` 这样的顺序来组织页面的CSS
+* 避免使用低效的选择器，如：
+
+```css
+    body > * { ... }
+    ul > li > a { ... }
+    
+```
 
 <a name="css-comments"></a>
 ## 3.CSS注释
@@ -158,7 +165,6 @@ CSS注释示例：
 <tr><td>通用元素</td><td>.tb,.nav,.list,.item,.tag,.pic,.info</td></tr>
 </table>
 
-
 <a name="css-hack"></a>
 ## 6.避免滥用CSS Hack
 
@@ -174,20 +180,8 @@ CSS注释示例：
 <tr><td>IE6</td><td>* html selector{ ... }</td></tr>
 <tr><td>IE7</td><td>*:first-child+html selector{ ... }</td></tr>
 <tr><td>非IE6</td><td>html>body selector{ ... }</td></tr>
-<tr>
-    <td>firefox only</td>
-    <td>@-moz-document url-prefix(){ ... }</td>
-  </tr>
-  <tr>
-    <td>saf3+/chrome1+</td>
-    <td>@media all and (-webkit-min-device-pixel-ratio:0){ ... }</td>
-  </tr>
-  <tr>
-    <td>opera only</td>
-    <td>@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0){ ... }</td>
-  </tr>
-  <tr>
-    <td>iPhone/mobile webkit</td>
-    <td>@media screen and (max-device-width: 480px){ ... }</td>
-  </tr>
+<tr><td>firefox only</td><td>@-moz-document url-prefix(){ ... }</td></tr>
+<tr><td>saf3+/chrome1+</td><td>@media all and (-webkit-min-device-pixel-ratio:0){ ... }</td></tr>
+<tr><td>opera only</td><td>@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0){ ... }</td></tr>
+<tr><td>iPhone/mobile webkit</td><td>@media screen and (max-device-width: 480px){ ... }</td></tr>
 </table>
