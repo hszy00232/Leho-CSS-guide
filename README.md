@@ -11,6 +11,7 @@
 3. [CSS注释](#css-comments)
 4. [CSS格式](#css-anchor)
 5. [CSS命名](#css-naming)
+6. [CSS Hank](#css-hack)
 
 <a name="general-principles"></a>
 ## 1.约定原则
@@ -158,40 +159,22 @@ CSS注释示例：
 </table>
 
 
-
-### 2.避免滥用CSS Hack ###
+<a name="css-hack"></a>
+## 6.避免滥用CSS Hack
 
 推荐使用下页的：
 区别属性：
 <table>
-  <tr>
-    <td>IE6</td>
-    <td>_property:value</td>
-  </tr>
-  <tr>
-    <td>IE6/7</td>
-    <td>*property:value</td>
-  </tr>
-  <tr>
-    <td>IE6/7/8/9</td>
-    <td>property:value\9</td>
-  </tr>
+<tr><td>IE6</td><td>_property:value</td></tr>
+<tr><td>IE6/7</td><td>*property:value</td></tr>
+<tr><td>IE6/7/8/9</td><td>property:value\9</td></tr>
 </table>
 区别规则：
 <table>
-  <tr>
-    <td>IE6</td>
-    <td>* html selector{ ... }</td>
-  </tr>
-  <tr>
-    <td>IE7</td>
-    <td>*:first-child+html selector{ ... }</td>
-  </tr>
-  <tr>
-    <td>非IE6</td>
-    <td>html>body selector{ ... }</td>
-  </tr>
-  <tr>
+<tr><td>IE6</td><td>* html selector{ ... }</td></tr>
+<tr><td>IE7</td><td>*:first-child+html selector{ ... }</td></tr>
+<tr><td>非IE6</td><td>html>body selector{ ... }</td></tr>
+<tr>
     <td>firefox only</td>
     <td>@-moz-document url-prefix(){ ... }</td>
   </tr>
