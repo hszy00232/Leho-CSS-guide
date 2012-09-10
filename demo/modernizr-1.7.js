@@ -10,7 +10,6 @@
  * Dual-licensed under the BSD or MIT licenses.
  * http://www.modernizr.com/license/
  */
-
  
 /*
  * Modernizr is a script that detects native CSS3 and HTML5 features
