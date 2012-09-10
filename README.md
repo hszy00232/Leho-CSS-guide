@@ -55,22 +55,28 @@
 * 3-1 CSS文件注释
 
 ```css
-/*
-Copyright (c) 2012, leho Inc. All rights reserved.
-version: 1.0.0.0
-*/
-/**
-* stylesheet for pagename
-* Author     :Email
-* created    :Date and Time
-* updated    :Date and Time
-* updated by :Email
+/** [Master Stylesheet]
+* project     : 项目名称
+* version     : 1.0
+* last change : 00/04/08 [更新内容，作者]
+* assigned to : 作者1，作者2
+* primary use : 用途
 */
 ```
 
-在这里 updated:Date and Time 和 updated by：Email是比较重要的。
+* 3-2 CSS模块注释
 
-* 3-2 CSS单行注释
+```css
+/** [Moudle Stylesheet]
+* project     : 项目名称
+* version     : 1.0
+* last change : 00/04/08 [更新内容，作者]
+* assigned to : 作者1，作者2
+* primary use : 用途
+*/
+```
+
+* 3-3 CSS单行注释
 
 将注释放在主题上方并独占一行，避免在行末旋转注释，控制每行长度在合理的范围内，比如80个字符，注释的大小写应当与普通句子相同，并且使用一致的文本缩进。
 
@@ -146,14 +152,14 @@ CSS注释示例：
 * 4-7 CSS的颜色值使用十六进制值(rgba格式除外),使用小写，可以使用缩写时必须使用缩写。如 `#aaa`
 * 4-8 单引号或双引号的选择保持一致。推荐使用双引号，如 `content:""`
 * 4-9 对于选择器中的属性值也加上引号，如 `input[type="checkbox"]`
-* 4-10 在允许的情况下，下要给0加上单位，如 `margin:0;`
+* 4-10 在允许的情况下，不要给0加上单位，如 `margin:0;`
 
 
 <a name="css-naming"></a>
 ## 5.CSS命名
 
 * 5-1 命名不要用缩写，除一些公认的缩写外，单词间用"-"做为连接符
-* 5-2 ID一般不推荐使用，如果用到的情况，需保证命名的唯一
+* 5-2 ID一般不推荐使用，如果用到的情况，需保证命名的唯一，由前缀和名字组成。如： `#form-reg`等
 * 5-3 Class用来标识某一类型的对象，出于模块化代码的考虑，命名最好使用前缀和名字组成，前缀最好是频道。如：`.myhome-top`,`.app-share-bd` 等。
 * 5-4 命名示例：
 
